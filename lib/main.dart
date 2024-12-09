@@ -7,12 +7,20 @@ void main() {
         backgroundColor: Colors.deepPurple,
         body: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 26, 2, 80),
-            Color.fromARGB(255, 45, 7, 98)
-          ])),
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 26, 2, 80),
+                Color.fromARGB(255, 45, 7, 98)
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
           child: const Center(
-            child: Text("Roll Dice App"),
+            child: Text(
+              "Roll Dice App",
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
           ),
         ),
       ),
